@@ -1,0 +1,70 @@
+{% extends 'peoplemanagement/master.html' %}
+{%load static%}
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<link rel="stylesheet" href="{%static 'css/swiper-bundle.min.css'%}">
+
+{% block title %}
+    registration
+{% endblock %}
+
+
+{% block body %}
+
+  <center>
+    <h1> <img height="150px" width="200px" src="{%static 'images/backg2.png'%}" alt=""> LEMON TREE HOTELS  PRV. LTD.</h1>
+  <h2>Hotel Booking Registration</h2>
+  </center>
+    
+    <form action="" method="post">
+        {% csrf_token %}
+    <h3>Name:</h3>
+    <input type="text" name="name" id="" style="width: 1210px; height: 50px;" value="{{data.name}}"><br><br>
+    
+  
+    <h3>Email:</h3>
+    <input type="email" name="email" id="" style="width: 1210px; height: 50px;" value="{{data.email}}"><br><br>
+  
+    <h3>Mobile No:</h3>
+    <input type="number" name="mbl" id="" style="width: 1210px; height: 50px;" value="{{data.mbl}}"><br><br>
+  
+    <h3>Check-in Date:</h3>
+    <input type="date" name="checkin" id="" style="width: 1210px; height: 50px;" value="{{data.checkin}}"><br><br>
+  
+    <h3>Check-out Date:</h3>
+    <input type="date" name="checkout" id="" style="width: 1210px; height: 50px;" value="{{data.checkout}}"><br><br>
+  
+    <h3>Number of Guests:</h3>
+    <input type="number" name="guests" id="" style="width: 1210px; height: 50px;" value="{{data.guests}}"><br><br>
+
+    <h3>Room Type:</h3>
+    <select style="width: 1210px; height: 50px;" name="roomtype" id="" value="{{data.roomtype}}">
+        <option value="roomonly">Room-only hotel room</option>
+        <option value="standerd">Standard hotel room</option>
+        <option value="minimalist">Minimalist hotel room</option>
+        <option value="deluxe">Deluxe hotel room</option>
+        <option value="studio">Studio hotel room</option>
+        <option value="connecting">Connecting room</option>
+        <option value="suites">Suites</option>
+        <option value="Other">Other</option>
+      </select><br><br>
+
+    <h3>Identity Type:</h3>
+    <select style="width: 1210px; height: 50px;" name="identitytype" id="" value="{{data.identitytype}}">
+        <option value="aadhar">Aadhar Number</option>
+        <option value="pan">PAN Number</option>
+        <option value="driving">Driving Licence</option>
+        <option value="voter">Voter ID</option>
+        <option value="passport">Passport Number</option>
+        <option value="visa">Visa Number</option>
+        <option value="Other">Other</option>
+
+    </select><br><br>
+
+    <h3>Identity Proof Number:</h3>
+    <input style="width: 1210px; height: 50px;" type="text" name="identityproof" id="" value="{{data.identityproof}}"><br><br>
+    <center>
+    <button type="reset" class="btn btn-danger"><a href="/delete/{{data.id}}" style="color: white;">Delete</a></button>
+    <button type="submit" class="btn btn-success">Update</button>
+    </center>
+    </form>
+{% endblock %}

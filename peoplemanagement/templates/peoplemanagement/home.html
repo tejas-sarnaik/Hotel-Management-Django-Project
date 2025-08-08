@@ -1,0 +1,333 @@
+{% extends 'peoplemanagement/master.html' %}
+{%load static%}
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<link rel="stylesheet" href="{%static 'css/swiper-bundle.min.css'%}">
+<style>
+  /* Basic styling for the card container */
+  .swiper-container {
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* Styling for individual cards */
+  .swiper-card {
+    flex: 0 0 300px; /* Adjust card width here */
+    height: 200px; /* Adjust card height here */
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Styling for the left and right buttons */
+  .swiper-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Disable pointer events when inactive */
+  .swiper-button.inactive {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+</style>
+{% block title %}
+    home
+{% endblock %}
+{% block body %}
+<video autoplay loop muted plays-inline class="back-video" src="{%static 'videos/ltbv.mp4'%}" style=" height: 100%; width: 100%;"></video>
+<center style="margin-top: -200px;" values><button type="button" class="btn btn-light">Choose Your Destination &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></center><br><br><br><br><br><br><br><br><br>
+<center><h1>WHAT'S NEW</h1></center><br>
+<center>
+    <div class="card mb-3" style="max-width: 1100px; height: 400px;">
+        <div class="row g-0" style="height: 390px; width: 1100px;">
+          <div class="col-md-4" style="height: 390px; width: 550px;">
+            <img hi src="{%static 'images/lt1.jpg'%}"class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8" style="height: 390px; width: 550px;"  >
+            <div class="card-body" style="height: 390px; width: 550px;">
+                <br>
+              <h5 class="card-text">Through the eyes of a kid filled to the brim with childlike wonder, summer is often synonymous with the much-awaited school break when the entire family packs up and leaves to create new memories.Perfectly befitting the theme of family, it's time to give back to our first superheroes, our fathers, and to celebrate them for all that they do. We are also pleased to announce our new signing in Lucknow. This is in addition to our 5 operational and 2 upcoming hotels in the state of Uttar Pradesh.We look forward to having you visit our hotels and creating memories with us.</h5><br>
+              <a href="/registration/"><button style="margin-left: 370px;" type="button" class="btn btn-warning">Book Now</button></a>
+              <p>*Best viewed on a desktop or in landscape mode on a mobile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</center><br>
+<center><h1>OFFERS & PROMOTIONS</h1></center><br>
+<center>
+  <div class="card text-bg-dark" style="height: 600px; width: 550px; margin-right: 530px;">
+    <img src="https://www.lemontreehotels.com/kimages/summeroffer.jpg" class="card-img" alt="...">
+    <div>
+    </div>
+    <h5>SUMMER SALE OFFER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/registration/"><button style="margin-left: 370px; margin-top: -36px;" type="button" class="btn btn-warning">Book Now</button></a></h5>
+  </div>
+  <div class="card text-bg-dark" style="height: 300px; width: 540px; margin-left: 600px;margin-top: -600px;">
+    <img src="https://www.lemontreehotels.com/Ka_assest/images/SundayRedefined616%C3%97308.jpg" class="card-img" alt="...">
+    <div>
+    </div>
+    <h5>SUNDAY REDEFINED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/registration/"><button style="margin-left: 370px;margin-top: -50px;" type="button" class="btn btn-warning">Book Now</button></a></h5>
+  </div><br><br>
+  <div class="card text-bg-dark" style="height: 300px; width: 540px;margin-left: 600px;">
+    <img src="https://www.lemontreehotels.com/kimages/april-23-Day-Cation-616x301.jpg" class="card-img" alt="...">
+    <div>
+    </div>
+    <h5>DAY ROOMS ( 10AM TO 5PM )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/registration/"><button style="margin-left: 370px;margin-top: -45px;" type="button" class="btn btn-warning">Book Now</button></a></h5>
+  </div>
+</center>
+
+<br><br>
+<center>
+  <div class="partners-offer">
+    <div class="container-fluid our_offers_new p-5 bg-light">
+      <div class="row"> <div class="heading text-center mb-4 col-md-12">
+        <h2>Partners Offers</h2>
+        <p class="mx-auto w-75">Enjoy a wide range of benefits thanks to our partner's exclusive offers and services. Join our loyalty program today and discover an all-new world of personalised offers and exclusive discounts tailored to your needs.</p>
+      </div>
+    </div>
+    <div id="updated_offer_sc_desktopOurPartners">
+      <div class="row desktop_offer_main">
+        <div class="col-lg-6">
+          <div class="our_offers_new_inner_right"> <div class="our_offers_new_inner w-100">
+            <div class="our_offers_new_inner_box Skykar-bg">
+              <div class="our_offers_new_inner_hover signup_offer_cs">
+                <div class="offer_new_heading_paragraph"> <h4>Skykar</h4></div>
+                <div class="btn-grpOffer">
+                  <div class="offer-links wow slideInRight2" data-wow-duration=".5s" data-wow-delay="1s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 1s; animation-name: slideInRight2;"> <a href="/registration/" data-toggle="modal" data-target="#our-partners_cs-pop" target="_blank" class="book-n ValentineOfferBN ">Explore More</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="our_offers_new_inner our_offers_new_inner_left">
+          <div class="our_offers_new_inner_box Healthians-bg">
+            <div class="our_offers_new_inner_hover">
+            <div class="offer_new_heading_paragraph offer_new_heading_paragraph_left-big"> <h4>Healthians</h4>
+            </div>
+            <div class="btn-grpOffer">
+                    <div class="offer-links wow slideInRight2" data-wow-duration=".5s" data-wow-delay="1s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 1s; animation-name: slideInRight2;"> <a href="/registration/" data-toggle="modal" data-target="#our-partners_cs-popHealthier" target="_blank" class="book-n ValentineOfferBN ">Explore More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</center><br>
+<center>
+  <h1>TRAVELING FOR</h1>
+  <h3>NORTH INDIA</h3>
+<div class="swiper-container">
+  <div class="swiper-card" style="height: 580px; width: 750px;background-color: white;"><img src="https://www.lemontreehotels.com/kimages/lthagra.jpg" alt="">
+    <h3>LEMON TREE HOTEL,AGRA</h3>
+    <center><p>Located in the city of love, this accommodation in Agra is just off the Bypass Road Khandari and enjoys excellent connectivity to parts of the city via Transport Nagar Road..</p><a href=""><button type="button" class="btn btn-success">Explore Now</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/registration/"><button type="button" class="btn btn-warning">Book Now</button></a>
+    </center></div>
+  <div class="swiper-card" style="height: 580px; width: 750px;background-color: white;"><img src="https://www.lemontreehotels.com/kimages/ltpRishikesh.jpg" alt="">
+      <h3>LEMON TREE PREMIER,
+        RISHIKESH
+        </h3>
+      <center><p>Located on the banks of the holy Ganges river, with its own Ghat, rests Lemon Tree Premier, Rishikesh, a stunning upscale r
+        Strategically located just 30 minutes from Dehradun Airport..</p><a href="/registration/"><button type="button" class="btn btn-success">Explore Now</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/registration/"><button type="button" class="btn btn-warning">Book Now</button></a>
+    </center></div>
+  <div class="swiper-card" style="height: 580px; width: 750px;background-color: white;"><img src="https://www.lemontreehotels.com/kimages/rfoxNeelkanth.jpg" alt="">
+    <h3>RED FOX HOTEL,
+      NEELKANTH
+      </h3>
+    <center><p>Red Fox Hotel, Neelkanth is situated on a scenic hilltop, just 26 kms from Rishikesh city center, amidst the valleys of Manikoot, B
+      and Vishnukoot. The hotel is at a walking distance..
+      </p><a href="/registration/"><button type="button" class="btn btn-success">Explore Now</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/registration/"><button type="button" class="btn btn-warning">Book Now</button></a>
+    </center></div>
+  <div class="swiper-card" style="height: 580px; width: 750px;background-color: white;"><img src="https://www.lemontreehotels.com/kimages/KLRishikesh.jpg" alt="">
+        <h3>KEYS LITE BY LEMON TREE HOTELS,
+          TAPOVAN, RISHIKESH</h3>
+        <center><p>Keys Lite by Lemon Tree Hotels, Tapovan, Rishikesh, is strategically located near the Ganges River, on Badrinath Road. Tapova
+          known for its serene beauty and river views.
+          </p><a href="/registration/"><button type="button" class="btn btn-success">Explore Now</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/registration/"><button type="button" class="btn btn-warning">Book Now</button></a>
+    </center></div>
+    <div class="swiper-card" style="height: 580px; width: 750px;background-color: white;"><img src="https://www.lemontreehotels.com/kimages/lthDehradun.jpg" alt="">
+      <h3>LEMON TREE HOTEL,
+        DEHRADUN        
+        </h3>
+      <center><p>Lemon Tree Hotel, Dehradun, located atop the award winning and Upper Midscale Pacific Mall on Rajpur road, a premium area o
+        Lemon Tree Hotel, Dehradun is just 45 mins from the snow...
+        </p><a href="/registration/"><button type="button" class="btn btn-success">Explore Now</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/registration/"><button type="button" class="btn btn-warning">Book Now</button></a>
+    </center></div>
+    <div class="swiper-card" style="height: 580px; width: 750px;background-color: white;"><img src="https://www.lemontreehotels.com/kimages/rfhDehradun.jpg" alt="">
+      <h3>RED FOX HOTEL,
+        DEHRADUN        
+        </h3>
+      <center><p>Located in the city's iconic business and shopping hub on Rajpur road, Red Fox Hotel, Dehradun welcomes you with its fresh bold
+        as well as crisp and clean rooms. Adjacent to the...
+        </p><a href="/registration/"><button type="button" class="btn btn-success">Explore Now</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/registration/"><button type="button" class="btn btn-warning">Book Now</button></a>
+    </center></div>
+    <div class="swiper-card" style="height: 580px; width: 750px;background-color: white;"><img src="https://www.lemontreehotels.com/kimages/lth_mukteshwar.jpg" alt="">
+      <h3>LEMON TREE HOTEL,
+        MUKTESHWAR                
+        </h3>
+      <center><p>Located strategically at the Dhanachuli bend in the hill town, Lemon Tree Hotel, Mukteshwar is perfectly-suited for leisure trave
+        prefer a serene destination with a bit of adventure. Nestled amids...        
+        </p><a href="/registration/"><button type="button" class="btn btn-success">Explore Now</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/registration/"><button type="button" class="btn btn-warning">Book Now</button></a>
+    </center></div>
+    <div class="swiper-card" style="height: 580px; width: 750px;background-color: white;"><img src="https://www.lemontreehotels.com/kimages/lthManali.jpg" alt="">
+      <h3>LEMON TREE HOTEL,
+        MANALI           
+        </h3>
+      <center><p>Located at an elevation of 1,463 mtr above sea level, Lemon Tree Hotel, Manali is strategically situated for a serene experience
+        being close to the heart of the main town.             
+        </p><a href="/registration/"><button type="button" class="btn btn-success">Explore Now</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/registration/"><button type="button" class="btn btn-warning">Book Now</button></a>
+    </center></div>
+    <div class="swiper-card" style="height: 580px; width: 750px;background-color: white;"><img src="https://www.lemontreehotels.com/kimages/lthAlwar.jpg" alt="">
+      <h3>LEMON TREE HOTEL,ALWAR</h3>
+      <center><p>Set in the historic city of Alwar, Lemon Tree Hotel is an ideal destination for both business and leisure travel. Just 10 minutes f
+        railway station, it is in close proximity to the...        
+        </p><a href="/registration/"><button type="button" class="btn btn-success">Explore Now</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/registration/"><button type="button" class="btn btn-warning">Book Now</button></a>
+    </center></div>
+</div>
+
+<!-- Left and Right buttons -->
+<button class="swiper-button" id="prevButton" onclick="swiper(-1)">Previous</button>
+<button class="swiper-button" id="nextButton" onclick="swiper(1)">Next</button>
+</center>
+<script>
+  let currentIndex = 0;
+  const cards = document.querySelectorAll('.swiper-card');
+  const prevButton = document.getElementById('prevButton');
+  const nextButton = document.getElementById('nextButton');
+
+  function showCard(index) {
+    cards.forEach(card => card.style.display = 'none');
+    cards[index].style.display = 'block';
+  }
+
+  function swiper(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) {
+      currentIndex = cards.length - 1;
+    } else if (currentIndex >= cards.length) {
+      currentIndex = 0;
+    }
+
+    showCard(currentIndex);
+  }
+
+  prevButton.classList.add('inactive'); // Initially, the "Previous" button is inactive
+
+  // Enable/disable buttons based on the index
+  function toggleButtons() {
+    prevButton.disabled = currentIndex === 0;
+    nextButton.disabled = currentIndex === cards.length - 1;
+    prevButton.classList.toggle('inactive', currentIndex === 0);
+    nextButton.classList.toggle('inactive', currentIndex === cards.length - 1);
+  }
+
+  // Show the initial card and toggle buttons
+  showCard(currentIndex);
+  toggleButtons();
+</script>
+<br>
+<section class="subMenurewards py-5 our_rewards_home" style="background-image: url(https://hoteltalk.in/wp-content/uploads/2023/01/299582282_5513657721988224_91022973824660963_n.jpg)  ;background-size:contain;background-position: 100%;background-repeat: no-repeat;">
+  <div class="container-fluid" style="height: 100%;"> <div class="row">
+    <div class="w-100 text-center mb-4"> <h2 style="color:black;">Our Rewards Program</h2>
+    </div>
+  </div>
+</div>
+<div class="RewardsBanner">
+  <div class="container"> <h2 style="color: black;">Members exclusive rewards and privileges with endless <br> possibilities, from free stays and upgrades to special <br> offers and previews, and much more...</h2> <h5 style="color:black;"> Infinity Rewards</h5>
+    <div class="rewardsBtns"> <a href="/rewards.aspx" class="OurRewardsProgramExplore"><button class="btn btn-primary">Explore</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/registration/" class="reward_join_btn OurRewardsProgramjoinUs"><button class="btn btn-info">Join us</button></a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="LemonTreeHotels_cs_main bg-light">
+  <div class="container"> <div class="row py-5 LemonTreeHotels_cs ">
+    <div class="col-12 brands brandsnew">
+      <div class="heading text-center"> <h1>LEMON TREE HOTELS</h1> <h4 class="py-2">INDIA'S LARGEST HOTEL CHAIN IN THE MID-PRICED HOTEL SECTOR</h4> 
+      </div>
+      <div class="my-2 mb-3 text-center">
+  Fresh, spirited and youthful, Lemon Tree Hotels (LTH) is India's largest chain in the mid-priced hotels sector and third largest overall, as of June 30, 2017, according to the Horwath Report. This award winning Indian hotel chain opened its first hotel with 49 rooms in May 2004 and operates 91 hotels in 57 destinations with ~8,550 rooms and over 6,500 employees.</div>
+     </div>
+    </div> 
+  </div> 
+</section>
+
+
+
+  <div class="container"> 
+    <div class="row"> 
+      <div class="col-12"> 
+      </div> 
+    </div> 
+  </div>
+  <section class="cs_our_brands pb-5 bg-light" id="updated_our_brand"> 
+    <div class="container"> 
+      <div class="row"> 
+        <div class="heading text-center pb-4 text-center w-100"> <h4 class="text-uppercase">Our brands</h4> 
+        </div> 
+      </div> 
+      <div class="row"> 
+        <div class="col-md-6"> <figure class="left_brands_img"><img class="w-100 brands_img lazyload lazyloaded" src="https://www.lemontreehotels.com/kimages/AHR.jpg" data-src="kimages/AHR.jpg"> 
+          <div class="our_brands_img_caption">Aurika, Udaipur
+</div></figure> </div> <div class="col-md-6"> 
+  <div class="row"> 
+    <div class="col-md-12"> 
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
+        <div class="panel panel-default"> 
+          <div class="panel-heading" role="tab" id="headingOne"> <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="viewimg('AHR.jpg', 'Aurika, Udaipur');"> <span class="aurika_brand_label">Aurika Hotels &amp; Resorts</span> <figure class="aurika_brand_img"><img class="lazyload mb-3 w-25 text-center mx-auto lazyloaded" src="https://www.lemontreehotels.com/images/LTP_newupdated.jpg" data-src="images/aurika_color_logo.jpg"></figure> </a> </h4> 
+          </div> 
+          <div id="collapseOne" class="panel-collapse collapse in show" role="tabpanel" aria-labelledby="headingOne"> 
+            <div class="panel-body"> 
+              <div class="accordion_mobile_content_img"> <img src="" data-src="kimages/AHR.jpg" class="lazyload lazyloaded"> <p>Aurika, Udaipur</p> 
+              </div> <p>When you stay with us expect an unexpected kind of style. Aurika hotels are exquisitely elegant and yet comfortably informal for you to be just as relaxed as you want to be. <a class="AurikaUdaipur-dsk" href="https://www.lemontreehotels.com/aurika-hotels-resorts.aspx">Explore More...</a></p> 
+            </div> 
+          </div> 
+        </div> 
+        <div class="panel panel-default"> 
+          <div class="panel-heading" role="tab" id="headingTwo"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="viewimg('LTP.jpg', 'Lemon Tree Premier, Bhubaneswar');"> <span class="aurika_brand_label">Lemon Tree Premier</span> <figure class="aurika_brand_img"><img class="mb-3 w-25 text-center mx-auto lazyload lazy" src="https://www.lemontreehotels.com/images/LTP_newupdated.jpg" data-src="images/LTP_newupdated.jpg"></figure> </a> </h4> 
+          </div> 
+           <p>Lemon Tree Premier, Bhubaneswar</p> 
+            </div> <p>The plush and spacious interiors at Lemon Tree Premier take the zing up a notch. This chain of Upper Midscale business and leisure hotels elevates the Lemon Tree experience while <a class="lthBhubaneswar-dsk" href="https://www.lemontreehotels.com/lemon-tree-premier.aspx">Explore More...</a></p> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="panel panel-default"> 
+        <div class="panel-heading" role="tab" id="headingThree"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="viewimg('LTH.jpg', 'Lemon Tree Hotel, Coimbatore');"> <span class="aurika_brand_label">Lemon Tree Hotels</span> <figure class="aurika_brand_img"><img class="mb-3 w-25 text-center mx-auto lazyload lazy" src="https://www.lemontreehotels.com/images/LTP_newupdated.jpg" data-src="images/LTH-newupdated.jpg"></figure> </a> </h4> 
+        </div> 
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"> 
+          <div class="panel-body"> 
+            <div class="accordion_mobile_content_img"> <img src="https://www.lemontreehotels.com/images/LTP_newupdated.jpg" data-src="kimages/LTH.jpg" class="lazyload lazy"> <p>Lemon Tree Hotel, Coimbatore</p> 
+            </div> <p>Lemon Tree Hotel are midscale business and leisure hotels that uplift your spirits at the end of a long day. Like the fruit they are named after, Lemon Tree Hotels are fresh, cool <a class="lthCoimbatore-dsk" href="https://www.lemontreehotels.com/lemon-tree-hotel.aspx">Explore More...</a></p> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="panel panel-default"> 
+        <div class="panel-heading" role="tab" id="headingFour"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="viewimg('RFH.jpg', 'Red Fox Hotel, Neelkanth');"> <span class="aurika_brand_label"> Red Fox By Lemon Tree Hotels</span> <figure class="aurika_brand_img"><img class="mb-3 w-25 text-center mx-auto lazyload lazy" src="https://www.lemontreehotels.com/images/LTP_newupdated.jpg" data-src="images/red_newupdated.jpg"></figure> </a> </h4> </div> <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour"> <div class="panel-body"> <div class="accordion_mobile_content_img"> <img src="" data-src="kimages/RFH.jpg" class="lazyload lazy"> <p>Red Fox Hotel, Neelkanth</p> </div> <p>Red Fox Hotel welcomes you with its bold interiors as well as crisp and clean rooms. These economy hotels delight you with their unbeatable value and reliable safety standards. <a class="lthNeelkanth-dsk" href="https://www.lemontreehotels.com/red-fox-hotel.aspx">Explore More...</a></p> </div> </div> </div> <div class="panel panel-default"> <div class="panel-heading" role="tab" id="headingFive"> <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="viewimg('KPH.jpg', 'Keys Prima by Lemon Tree Hotels, Thekaddy');"> </div> </div> </div> </div> </div> </div> </div> </div> </div> </section>
+
+<br>
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/vZE35FI3wxw?si=amDp6VoFX-vttR2r&amp;start=186" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% endblock %}

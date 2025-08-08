@@ -1,0 +1,44 @@
+{% extends 'peoplemanagement/master.html' %}
+{%load static%}
+{% block title %}
+    record
+{% endblock %}
+{% block body %}
+<center><h1> <img height="150px" width="200px" src="{%static 'images/backg2.png'%}" alt=""> LEMON TREE HOTELS  PRV. LTD.</h1>
+<h3>Record of Hotel Booking</h3>
+</center>
+
+
+<table class="table">
+    <thead>
+      <tr class="table-success">
+        <th scope="col">Id No.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile No.</th>
+        <th scope="col">Check-in Date</th>
+        <th scope="col">Check-out Date</th>
+        <th scope="col">Guests</th>
+        <th scope="col">Room Type</th>
+        <th scope="col">Identity Type</th>
+        <th scope="col">Identity Proof</th>
+      </tr>
+    </thead>
+    <tbody>
+       {% for i in data %}
+      <tr>
+        <th scope="row">{{i.id}}</th>
+        <td><a href="/update/{{i.id}}/">{{i.name}}</a></td>
+        <td>{{i.email}}</td>
+        <td>{{i.mbl}}</td>
+        <td>{{i.checkin}}</td>
+        <td>{{i.checkout}}</td>
+        <td>{{i.guests}}</td>
+        <td>{{i.roomtype}}</td>
+        <td>{{i.identitytype}}</td>
+        <td>{{i.identityproof}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

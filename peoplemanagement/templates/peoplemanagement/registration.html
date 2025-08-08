@@ -1,0 +1,78 @@
+{% extends 'peoplemanagement/master.html' %}
+{%load static%}
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<link rel="stylesheet" href="{%static 'css/swiper-bundle.min.css'%}">
+
+{% block title %}
+    registration
+{% endblock %}
+
+
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/booking.css' %}">
+
+<div class="container">
+  <div class="header">
+    <img src="{% static 'images/backg2.png' %}" alt="Hotel Logo" class="logo">
+    <h1>LEMON TREE HOTELS PVT. LTD.</h1>
+    <h2>Hotel Booking Registration</h2>
+  </div>
+
+  <form action="" method="post" class="booking-form">
+    {% csrf_token %}
+
+    <label for="name">Full Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="mbl">Mobile No:</label>
+    <input type="number" name="mbl" id="mbl" required>
+
+    <label for="checkin">Check-in Date:</label>
+    <input type="date" name="checkin" id="checkin" required>
+
+    <label for="checkout">Check-out Date:</label>
+    <input type="date" name="checkout" id="checkout" required>
+
+    <label for="guests">Number of Guests:</label>
+    <input type="number" name="guests" id="guests" min="1" required>
+
+    <label for="roomtype">Room Type:</label>
+    <select name="roomtype" id="roomtype" required>
+      <option value="" disabled selected>Select a room type</option>
+      <option value="roomonly">Room-only</option>
+      <option value="standard">Standard</option>
+      <option value="minimalist">Minimalist</option>
+      <option value="deluxe">Deluxe</option>
+      <option value="studio">Studio</option>
+      <option value="connecting">Connecting Room</option>
+      <option value="suites">Suites</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="identitytype">Identity Type:</label>
+    <select name="identitytype" id="identitytype" required>
+      <option value="" disabled selected>Select an identity type</option>
+      <option value="aadhar">Aadhar Number</option>
+      <option value="pan">PAN Number</option>
+      <option value="driving">Driving Licence</option>
+      <option value="voter">Voter ID</option>
+      <option value="passport">Passport</option>
+      <option value="visa">Visa Number</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="identityproof">Identity Proof Number:</label>
+    <input type="text" name="identityproof" id="identityproof" required>
+
+    <div class="form-buttons">
+      <button type="reset" class="btn reset-btn">Reset</button>
+      <button type="submit" class="btn submit-btn">Book Now</button>
+    </div>
+  </form>
+</div>
+
+{% endblock %}
