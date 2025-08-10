@@ -159,9 +159,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Tejas Sarnaik**
 
-- 🐙 GitHub: [@tejasssarnaik](https://github.com/tejasssarnaik)
+- 🐙 GitHub: [@tejasssarnaik](https://github.com/tejas-sarnaik)
 - 📧 Email: tejassarnaik2120@gmail.com
-- 🔗 Project Link: [Hotel Management Django Project](https://github.com/tejasssarnaik/Hotel-Management-Django-Project)
+- 🔗 Project Link: [Hotel Management Django Project](https://github.com/tejas-sarnaik/Hotel-Management-Django-Project)
 
 ## 💼 Services
 
